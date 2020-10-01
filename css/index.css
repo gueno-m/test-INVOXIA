@@ -1,0 +1,383 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #7AC4B9;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* BARRE DE NAV */
+
+.navbar {
+    padding: .5rem 0rem;
+}
+
+.navbar button {
+    margin-right: 30px;
+    transition: all .5s ease;
+}
+
+.logo {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 30px;
+    transition: all .5s ease;
+}
+
+.shop {
+    margin-right: 30px;
+    width: 215.85px;
+    display: flex;
+}
+
+.shop svg {
+    cursor: pointer;
+    fill: black;
+    margin: auto;
+    opacity: .5;
+    transition: opacity .3s ease;
+}
+
+.shop .bag {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.shop .zoom {
+    height: 20px;
+    width: 20px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.shop .bag:hover,
+.shop .zoom:hover {
+    opacity: 1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 800;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: .9rem;
+}
+
+
+/* CONTAINER */
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+
+/* PARTIE GAUCHE DE LA PAGE */
+
+.left {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    animation: all .5s ease;
+}
+
+.left svg {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    bottom: 30px;
+    right: 50px;
+    fill: black;
+    opacity: 0.3;
+    z-index: 88;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.left svg:hover {
+    opacity: 1;
+}
+
+
+/* PARTIE DROITE DE LA PAGE */
+
+.right {
+    width: 40%;
+    height: 100vh;
+    padding-left: 50px;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: column;
+    animation: all .5s ease;
+}
+
+.right h1 {
+    margin: auto;
+    margin-left: 0;
+    margin-top: 22%;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.right h3 {
+    margin: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #D5D5D5
+}
+
+.right .buttons,
+.right .buy {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right .buttons a {
+    width: 48%;
+    padding: 2px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #D5D5D5;
+    border: solid 3px #D5D5D5;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all .3s ease;
+    border-radius: 0;
+}
+
+.right .buttons a:focus {
+    outline: none;
+}
+
+.check,
+.right .buttons a:hover {
+    color: white !important;
+    background-color: #7AC4B9;
+    border: solid 3px #7AC4B9 !important;
+}
+
+.line {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border: solid 1px #D5D5D5;
+    width: 100%;
+    opacity: .5;
+}
+
+.buy p {
+    margin: auto;
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.btnBuy {
+    margin: auto;
+    margin-right: 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    font-size: .8rem;
+    transition: all .3s ease;
+}
+
+.btnBuy:hover {
+    color: #7AC4B9;
+    text-decoration: none;
+}
+
+.right .description {
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #D5D5D5
+}
+
+.accordeon {
+    margin: auto;
+    margin-top: 25px;
+    width: 100%;
+    flex-direction: column;
+    /* border: solid 2px red; */
+}
+
+.accordeon-item {
+    border-top: solid 1px #D5D5D5;
+    border-bottom: solid 1px #D5D5D5;
+}
+
+.accordeon-item:first-child {
+    border-bottom: none;
+}
+
+.item-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.item-header p {
+    color: black;
+    margin: auto;
+    margin-left: 0;
+    font-weight: 800;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.infos {
+    margin: 0;
+    padding: 5px 10px;
+    display: none;
+    overflow: hidden;
+}
+
+.infos li {
+    list-style-type: none;
+    color: black;
+    opacity: .5;
+}
+
+.accordeon-icon {
+    font-size: 1rem;
+}
+
+
+/* SLIDER */
+
+.swiper-container {
+    width: calc(100% - 30px);
+    height: 100%;
+    margin-right: 0;
+    background-color: #F4F4F4;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.swiper-slide div {
+    margin: auto;
+    width: 40%;
+    height: 65%;
+    background-color: white;
+    box-shadow: -1px 12px 13px 0px rgba(0, 0, 0, 0.19);
+    display: flex;
+    transition: all .5s ease;
+}
+
+.swiper-slide div img {
+    height: 55%;
+    margin: auto;
+    transition: all .5s ease;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 30px;
+}
+
+.swiper-pagination-bullet-active {
+    background: black;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1295px) {
+    .swiper-slide div {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .left {
+        width: 55%;
+    }
+    .right {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .shop {
+        width: 100%;
+    }
+    .shop .zoom {
+        margin-right: 30px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        margin-left: 30px;
+        margin-right: O;
+    }
+    section {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+        min-height: 100vh;
+        padding-right: 50px;
+    }
+    .right h1 {
+        margin-top: 12%;
+    }
+    .swiper-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .swiper-slide div {
+        width: 75%;
+    }
+    .swiper-slide div img {
+        height: 45%;
+    }
+    .accordeon {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .navbar button {
+        margin-right: 10px;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+}
