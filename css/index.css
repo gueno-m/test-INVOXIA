@@ -131,7 +131,7 @@ section {
 .right h1 {
     margin: auto;
     margin-left: 0;
-    margin-top: 22%;
+    margin-top: 23%;
     margin-bottom: 0;
     font-weight: 600;
     text-transform: uppercase;
@@ -141,7 +141,7 @@ section {
     margin: auto;
     margin-left: 0;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 1.5%;
     font-size: 1rem;
     color: #D5D5D5
 }
@@ -150,7 +150,7 @@ section {
 .right .buy {
     width: 100%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 3.5%;
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -182,7 +182,7 @@ section {
 
 .line {
     margin: auto;
-    margin-top: 30px;
+    margin-top: 6%;
     margin-bottom: 0;
     border: solid 1px #D5D5D5;
     width: 100%;
@@ -216,17 +216,16 @@ section {
 .right .description {
     margin: auto;
     margin-bottom: 0px;
-    margin-top: 25px;
+    margin-top: 5%;
     font-size: 1rem;
     color: #D5D5D5
 }
 
 .accordeon {
     margin: auto;
-    margin-top: 25px;
+    margin-top: 5%;
     width: 100%;
     flex-direction: column;
-    /* border: solid 2px red; */
 }
 
 .accordeon-item {
@@ -314,7 +313,7 @@ section {
 }
 
 
-/* MEDIA QUERY */
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1295px) {
     .swiper-slide div {
@@ -340,7 +339,7 @@ section {
     }
     .navbar-light .navbar-nav .nav-link {
         margin-left: 30px;
-        margin-right: O;
+        margin-right: 0;
     }
     section {
         flex-direction: column;
@@ -354,7 +353,7 @@ section {
         padding-right: 50px;
     }
     .right h1 {
-        margin-top: 12%;
+        margin-top: 18%;
     }
     .swiper-container {
         width: 100%;
@@ -369,7 +368,7 @@ section {
         height: 45%;
     }
     .accordeon {
-        margin-bottom: 50px;
+        margin-bottom: 10%;
     }
 }
 
